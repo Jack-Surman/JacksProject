@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body {
+  font-family: 'Poppins', Georgia, sans-serif;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+main {
+  background-image: url('https://image.freepik.com/free-photo/close-up-minimal-laptop-desktop-render-background_53036-39.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  display: flex;
+  color: #FFF;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+header h1{
+  margin-left: 2rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+header li {
+  display: inline;
+  padding: 1rem;
+  color: #FFF;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header a {
+  text-decoration: none;
+}
+header button {
+    background-color: transparent;
+    border: #FFF solid 2px;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #FFF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.bannercontent {
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  padding-left: 3rem;
+  color: #FFF;
+}
+.bannercontent button {
+  border: none;
+  width: 8rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #FFA500;
+  color: #FFF;
+  padding: 1rem 2rem 1rem 2rem;
+}
+.bannercontent h2 {
+  line-height: 3.5rem;
+}
+.bannercontent p {
+  width: 100%;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+}
+.socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+.socialmedia ul li {
+  display: inline;
+  list-style-type: none;
+}
+.socialmedia ul li img {
+  width: 3rem;
+  height: 3rem;
+}
+.vidsec {
+  width: 45%;
+  margin-left: 3rem;
+}
+.vidsec h2 {
+  line-height: 3rem;
+}
+.vidsec ul {
+  margin-left: -2rem;
+}
+.vidsec li {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+.vidsec details summary {
+  cursor: pointer;
+  color: #000;
+}
+.vidsec details {
+  color: #888;
+}
+.vid {
+  display: flex;
+  justify-content: right;
+  margin-top: -15rem;
+  margin-right: 3rem;
+}
+.videogallery {
+  background-color: #f4c2c2;
+}
+.videogallerydesc {
+  display: flex;
+  align-items: center;
+}
+.videogallerydesc h2 {
+  padding-left: 3rem;
+}
+.videogallery h3 {
+  margin-left: 2em;
+}
