@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap');
 body {
   font-family: 'Poppins', Georgia, sans-serif;
+  box-sizing: border-box;
 }
 h2 {
   font-size: 3rem;
@@ -48,11 +50,8 @@ header button {
     font-size: 1.25rem;
     font-weight: bold;
     color: #FFF;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin: 1rem 2rem 1rem 0;
+    padding: 0 2rem 0 2rem;
 }
 .bannercontent {
   display: flex;
@@ -60,6 +59,15 @@ header button {
   flex-direction: column;
   padding-left: 3rem;
   color: #FFF;
+}
+.bannercontent h2 {
+  line-height: 3.5rem;
+}
+.bannercontent p {
+  width: 100%;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .bannercontent button {
   border: none;
@@ -71,14 +79,6 @@ header button {
   background-color: #FFA500;
   color: #FFF;
   padding: 1rem 2rem 1rem 2rem;
-}
-.bannercontent h2 {
-  line-height: 3.5rem;
-}
-.bannercontent p {
-  width: 100%;
-  margin-top: -1.5rem;
-  margin-bottom: 2rem;
 }
 .socialmedia {
   display: flex;
@@ -94,11 +94,20 @@ header button {
   height: 3rem;
 }
 .vidsec {
-  width: 45%;
-  margin-left: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5%;
+  margin: 3rem 3rem 3rem 3rem;
+}
+.vidsecboxitem {
+  width: 47.5%;
 }
 .vidsec h2 {
-  line-height: 3rem;
+  line-height: 3.5rem;
+}
+.vidsec h3 {
+  margin-bottom: -1rem;
 }
 .vidsec ul {
   margin-left: -2rem;
@@ -113,23 +122,341 @@ header button {
 }
 .vidsec details {
   color: #888;
-}
-.vid {
-  display: flex;
-  justify-content: right;
-  margin-top: -15rem;
-  margin-right: 3rem;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .videogallery {
-  background-color: #f4c2c2;
+  background-color: #f9f1fe;
+  padding-top: 3rem;
+}
+.videogallery h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 .videogallerydesc {
   display: flex;
-  align-items: center;
+  margin: -3rem 3rem 0 3rem;
+  justify-content: space-between;
+}
+.videogallerydescbox {
+  width: 45%;
 }
 .videogallerydesc h2 {
-  padding-left: 3rem;
+  line-height: 3.5rem;
 }
-.videogallery h3 {
-  margin-left: 2em;
+.videogallerydesc p {
+  color: #888;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.videogallery li {
+  display: inline;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #888;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.videogallery li:first-child {
+  color: #000;
+}
+.worknamesbox {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  column-gap: 5%;
+}
+.worknamesbox li {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.ourworks {
+  padding-right: 5rem;
+}
+.ourworks ul {
+  display: flex;
+  width: 100%;
+  column-gap: 5%;
+  justify-content: space-around;
+}
+.ourworks li {
+  width: 30%;
+}
+.ourworks img {
+  width: 100%;
+  height: 100%;
+}
+.videogallerybuttonflex {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.videogallery button {
+  border: none;
+  width: auto;
+  cursor: pointer;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #BA55D3;
+  color: #FFF;
+  padding: 1rem 3rem 1rem 3rem;
+}
+.ourservices {
+  margin: 3rem 3rem 5rem 3rem;
+}
+.ourservices h2 {
+  text-align: center;
+}
+.ourservices p {
+  width: 50%;
+  text-align: center;
+  margin: -2rem auto 3rem auto;
+}
+.ourservices ul {
+  display: flex;
+  column-gap: 5%;
+}
+.ourservices ul li {
+  width: 30%;
+  list-style-type: none;
+  text-align: center;
+}
+.ourservices ul li details {
+  color: #888;
+}
+.ourservices ul li details summary {
+  font-size: 1.25rem;
+  color: #000;
+  list-style-type: none;
+}
+.ourservices ul li img {
+  width: 3rem;
+  height: 3rem;
+}
+.ourteam {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5%;
+  background-color: #020079;
+  color: #FFF;
+  padding-right: 5%;
+}
+.ourteamcontent {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+.ourteamphoto {
+  width: 50%;
+}
+.ourteamcontent h2 {
+  width: 50%;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+  line-height: 3.5rem;
+}
+.ourteamcontent button {
+  border: none;
+  width: 10rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #FFA500;
+  color: #FFF;
+  padding: 1rem 2rem 1rem 2rem;
+}
+.reviews h2 {
+  text-align: center;
+  margin-bottom: -1rem;
+}
+.reviews p {
+  display: flex;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.revblock {
+  display: flex;
+  margin-top: 3rem;
+  column-gap: 5%;
+  padding-right: 3rem;
+}
+.reviews ul {
+  list-style-type: none;
+}
+.reviews ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  border: #888 solid 0.1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  box-shadow: 0.2rem 0.2rem #888;
+}
+.reviews ul li blockquote {
+  margin-left: 0rem;
+  color: #888;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.revblock li p {
+  margin-left: 0rem;
+}
+.reviews ul li img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+}
+.reviews img {
+  width: 100%;
+}
+.blogblock {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  background-color:#f9f1fe;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3rem 3rem 3rem;
+}
+.blogblockcontent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.blogblockcontent h2 {
+  margin-top: -0.5rem;
+  line-height: 3rem;
+}
+.blogblockcontent p {
+  margin-top: -1rem;
+  padding-bottom: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.blogblockcontent button {
+  border: none;
+  width: 12rem;
+  cursor: pointer;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #BA55D3;
+  color: #FFF;
+  padding: 1rem 3rem 1rem 3rem;
+}
+.blogblockphoto {
+  width: 50%;
+  position: relative;
+}
+.blogblockphoto figure img {
+  width: 100%;
+  filter: drop-shadow(-1rem 1rem #af69ef);
+  border-radius: 0.25rem;
+}
+.blogblockphoto figure figcaption {
+  max-width: 80%;
+  color: #FFF;
+  position: absolute;
+  padding-top: 3rem;
+  bottom: 2.5rem;
+  left: 4rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.25rem;
+}
+.blogblockphoto figure figcaption h4 {
+  font-family: 'Poppins', Georgia, sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: -0.5rem;
+}
+.blogblockphoto figure figcaption img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  filter: none;
+}
+.blogblockphoto figure .figcaptionauthor {
+  display: flex;
+  column-gap: 4%;
+}
+.figcaptionauthoritem {
+  width: 50%;
+}
+.bottombackground {
+  background-image: url("https://wallpaper.dog/large/20435963.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contactus {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+.contactus h2 {
+  margin-bottom: -1rem;
+}
+.contactus p {
+  width: 50%;
+}
+.contactusbox {
+  display: flex;
+  width: 50%;
+  column-gap: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactusform {
+  height: 3rem;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-left: 10%;
+  padding-right: 50%;
+  margin-left: -30%;
+}
+.contactusbutton {
+  border: none;
+  cursor: pointer;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #BA55D3;
+  color: #FFF;
+  padding: 1rem 3rem 1rem 3rem;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 5%;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li a {
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #888;
+}
+footer ul li h4 {
+  color: #000;
+}
+.socialmediabox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footersocialmedia ul {
+  margin-left: -3rem;
+}
+.footersocialmedia ul li {
+  list-style-type: none;
+  display: inline;
+}
+.footersocialmedia ul li img {
+  width: 3rem;
+  height: 3rem;
 }
